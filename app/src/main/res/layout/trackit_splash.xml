@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.proj.trackit_splash"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:orientation="vertical"
+        android:background="@drawable/trackit_splash_top">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/trackitword">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Tracking app"
+            android:textColor="#a019ec"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0 BETA"
+            android:textColor="#a019ec"
+            android:textSize="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+    
+    
+</LinearLayout>

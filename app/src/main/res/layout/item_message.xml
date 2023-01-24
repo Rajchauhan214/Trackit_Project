@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/cardview_margin_4"
+	android:layout_marginBottom="@dimen/cardview_margin_4"
+	android:orientation="horizontal"
+	android:id="@+id/row">
+
+	<ImageView
+		android:layout_width="36dp"
+		android:layout_height="36dp"
+		android:id="@+id/messengerImageView"
+		android:src="@drawable/child_face_icon"
+		android:contentDescription="@string/app_name"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:background="@drawable/gradient"
+		android:gravity="center_vertical"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/messengerTextView"
+			android:layout_width="wrap_content"
+			android:paddingLeft="20dp"
+			android:paddingTop="3dp"
+			android:paddingRight="20dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0"
+			android:textColor="#ffffff"
+			android:textStyle="bold"
+			tools:text="Name"/>
+
+		<TextView
+			android:id="@+id/messageTextView"
+			android:layout_width="wrap_content"
+			android:paddingLeft="20dp"
+			android:paddingTop="3dp"
+			android:paddingBottom="10dp"
+			android:paddingRight="20dp"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:layout_weight="0"
+			tools:text="Message"/>
+
+
+	</LinearLayout>
+
+</LinearLayout>

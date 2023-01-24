@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/purple_nav_home_icon"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/fav"
+        android:enabled="true"
+        android:icon="@drawable/purple_nav_message_icon"
+        android:title="Message"
+
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/profile"
+        android:iconTint="#ffff"
+        android:iconTintMode="screen"
+        android:icon="@drawable/radio"
+        app:showAsAction="ifRoom"
+        android:title="Profile" />
+
+
+    <!--    <item-->
+<!--        android:id="@+id/home"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@color/colorAccent"-->
+<!--        android:title="Recents"-->
+<!--         />-->
+<!--    <item-->
+<!--        android:id="@+id/fav"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@color/colorPrimary"-->
+<!--        android:title="Favorites"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/profile"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@color/black"-->
+<!--        android:title="Profile"-->
+<!--        app:showAsAction="ifRoom" />-->
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical" android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--</LinearLayout>-->

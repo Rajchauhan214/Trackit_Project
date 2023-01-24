@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".trackit_parentlogin"
+	android:orientation="vertical">
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:background="#ffffff"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		android:src="@drawable/gradient2square" />
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="40dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<LinearLayout
+			android:id="@+id/backlog1"
+			android:layout_width="120dp"
+			android:layout_height="70dp"
+			android:clickable="true"
+			android:focusable="true"
+			android:gravity="center"
+			android:foreground="?android:attr/selectableItemBackground"
+			android:padding="1dp">
+
+			<ImageView
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				android:tint="#191919"
+				android:src="@drawable/baseline_arrow_back_ios_24" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Back"
+				android:textColor="#191919"
+				android:textSize="20sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+
+	<com.github.captain_miao.optroundcardview.OptRoundCardView
+		android:id="@+id/optRoundCardView"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="@+id/imageView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+		app:optRoundCardBackgroundColor="@color/appblueinter"
+		app:optRoundCardCornerRadius="50dp"
+		app:optRoundCardElevation="0dp"
+		app:optRoundCardLeftBottomCorner="false"
+		app:optRoundCardLeftTopCorner="true"
+		app:optRoundCardRightBottomCorner="false"
+		app:optRoundCardRightTopCorner="true">
+
+		<androidx.core.widget.NestedScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="80dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Welcome Back Parent"
+					android:textAlignment="center"
+					android:textColor="#9394B8"
+					android:textSize="17sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/field_email"
+					android:inputType="textEmailAddress"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="30dp"
+					android:layout_marginTop="30dp"
+					android:layout_marginEnd="30dp"
+					android:background="@android:color/transparent"
+					android:hint="Username"
+					android:padding="15dp"
+					android:textColor="@android:color/white"
+					android:textColorHint="@android:color/white"
+					android:textStyle="bold" />
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginStart="40dp"
+					android:layout_marginEnd="40dp"
+					android:background="#5A5A5A" />
+
+				<EditText
+					android:id="@+id/field_password"
+					android:inputType="textPassword"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="30dp"
+					android:layout_marginTop="30dp"
+					android:layout_marginEnd="30dp"
+					android:background="@android:color/transparent"
+					android:hint="Password"
+					android:padding="15dp"
+					android:textColor="@android:color/white"
+					android:textColorHint="@android:color/white"
+					android:textStyle="bold" />
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_marginStart="40dp"
+					android:layout_marginEnd="40dp"
+					android:background="#5A5A5A" />
+
+				<Button
+					android:id="@+id/button_sign_in"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_marginStart="30dp"
+					android:layout_marginTop="30dp"
+					android:layout_marginEnd="30dp"
+					android:background="@drawable/gradient2"
+					android:text="Log in"
+					android:textAllCaps="false"
+					android:textColor="@android:color/white"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+				<Button
+					android:id="@+id/parent_registerp"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_marginStart="30dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="30dp"
+					android:background="@drawable/round_blue_border"
+					android:text="Create Account"
+					android:textAllCaps="false"
+					android:textColor="@android:color/white"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:text="Other way ?"
+					android:textAlignment="center"
+					android:textColor="#9394B8"
+					android:textSize="17sp"
+					android:textStyle="bold" />
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:gravity="center"
+					android:layout_marginTop="15dp">
+
+					<ImageView
+						android:src="@drawable/google_icon"
+						android:layout_marginRight="110dp"
+						android:layout_width="50dp"
+						android:layout_height="50dp"></ImageView>
+
+
+					<ImageView
+						android:id="@+id/fb"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_marginLeft="110dp"
+						android:src="@drawable/facebook_icon"></ImageView>
+
+				</RelativeLayout>
+
+
+				<com.github.captain_miao.optroundcardview.OptRoundCardView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="20dp"
+					app:optRoundCardCornerRadius="30dp"
+					app:optRoundCardLeftBottomCorner="false"
+					app:optRoundCardLeftTopCorner="true"
+					app:optRoundCardRightBottomCorner="false"
+					app:optRoundCardRightTopCorner="true">
+
+					<LinearLayout
+						android:id="@+id/child_login"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginRight="20dp"
+							android:gravity="center">
+
+							<ImageView
+								android:layout_width="50dp"
+								android:layout_height="50dp"
+								android:src="@drawable/child_face_icon">
+
+							</ImageView>
+						</LinearLayout>
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="20dp"
+							android:gravity="center">
+							<TextView
+
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:gravity="center"
+								android:focusable="true"
+								android:text="Child login"
+								android:textColor="#191919"
+								android:textSize="25sp"
+								android:textStyle="bold" />
+						</LinearLayout>
+					</LinearLayout>
+
+				</com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+			</LinearLayout>
+
+		</androidx.core.widget.NestedScrollView>
+
+
+	</com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginBottom="8dp"
+		android:elevation="0dp"
+		android:src="@drawable/parent_face_icon"
+		app:layout_constraintBottom_toTopOf="@+id/optRoundCardView"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintStart_toStartOf="@+id/imageView"
+		app:layout_constraintTop_toTopOf="@+id/optRoundCardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+	<!--&lt;!&ndash;	<ImageView&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:id="@+id/icon"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:layout_width="wrap_content"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:layout_height="wrap_content"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:layout_centerHorizontal="true"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:layout_above="@+id/layout_email_password"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:layout_marginBottom="@dimen/activity_vertical_margin"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:contentDescription="@string/app_name"&ndash;&gt;-->
+	<!--&lt;!&ndash;		android:src="@drawable/logo"/>&ndash;&gt;-->
+
+	<!--<LinearLayout-->
+	<!--    android:id="@+id/layout_email_password"-->
+	<!--    android:layout_width="match_parent"-->
+	<!--    android:layout_height="wrap_content"-->
+	<!--    android:layout_centerInParent="true"-->
+	<!--    android:orientation="horizontal">-->
+
+	<!--    <EditText-->
+	<!--        android:id="@+id/field_email"-->
+	<!--        android:layout_width="0dp"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:layout_weight="1"-->
+	<!--        android:hint="@string/hint_email"-->
+	<!--        android:inputType="textEmailAddress"-->
+	<!--        android:maxLines="1"/>-->
+
+	<!--    <EditText-->
+	<!--        android:id="@+id/field_password"-->
+	<!--        android:layout_width="0dp"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:layout_weight="1"-->
+	<!--        android:hint="@string/hint_password"-->
+	<!--        android:inputType="textPassword"-->
+	<!--        android:maxLines="1"/>-->
+
+	<!--</LinearLayout>-->
+
+	<!--<LinearLayout-->
+	<!--    android:layout_width="match_parent"-->
+	<!--    android:layout_height="wrap_content"-->
+	<!--    android:layout_below="@id/layout_email_password"-->
+	<!--    android:orientation="horizontal">-->
+
+
+	<!--    <Button-->
+	<!--        style="?android:attr/button"-->
+	<!--        android:id="@+id/button_sign_in"-->
+	<!--        android:layout_width="0dp"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:layout_weight="1"-->
+	<!--        android:text="@string/sign_in"/>-->
+
+	<!--    &lt;!&ndash;		<Button&ndash;&gt;-->
+	<!--    &lt;!&ndash;			style="?android:attr/button"&ndash;&gt;-->
+	<!--    &lt;!&ndash;			android:id="@+id/button_sign_up"&ndash;&gt;-->
+	<!--    &lt;!&ndash;			android:layout_width="0dp"&ndash;&gt;-->
+	<!--    &lt;!&ndash;			android:layout_height="wrap_content"&ndash;&gt;-->
+	<!--    &lt;!&ndash;			android:layout_weight="1"&ndash;&gt;-->
+	<!--    &lt;!&ndash;			android:text="@string/sign_up"/>&ndash;&gt;-->
+	<!--    <Button-->
+	<!--        style="?android:attr/button"-->
+	<!--        android:id="@+id/button_sign_up1"-->
+	<!--        android:layout_width="0dp"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:layout_weight="1"-->
+	<!--        android:text="child"/>-->
+	<!--    <Button-->
+	<!--        style="?android:attr/button"-->
+	<!--        android:id="@+id/button_sign_up2"-->
+	<!--        android:layout_width="0dp"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:layout_weight="1"-->
+	<!--        android:text="parent"/>-->
+
+	<!--</LinearLayout>-->
+
+	<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+<!--	xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	xmlns:tools="http://schemas.android.com/tools"-->
+<!--	android:layout_width="match_parent"-->
+<!--	android:layout_height="match_parent"-->
+<!--	android:paddingBottom="@dimen/activity_vertical_margin"-->
+<!--	android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--	android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--	android:paddingTop="@dimen/activity_vertical_margin"-->
+<!--	android:background="@color/green"-->
+<!--	tools:context="com.example.proj.SignInActivity">-->
+
+
+
+<!--	<LinearLayout-->
+<!--		android:id="@+id/layout_email_password"-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:layout_centerInParent="true"-->
+<!--		android:orientation="horizontal">-->
+
+<!--		<TextView-->
+<!--			android:layout_width="60dp"-->
+<!--			android:layout_height="60dp"-->
+<!--			android:text="fuck"></TextView>-->
+
+<!--		<EditText-->
+<!--			android:id="@+id/field_email"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_weight="1"-->
+<!--			android:hint="@string/hint_email"-->
+<!--			android:inputType="textEmailAddress"-->
+<!--			android:maxLines="1"/>-->
+
+<!--		<EditText-->
+<!--			android:id="@+id/field_password"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_weight="1"-->
+<!--			android:hint="@string/hint_password"-->
+<!--			android:inputType="textPassword"-->
+<!--			android:maxLines="1"/>-->
+
+<!--	</LinearLayout>-->
+
+<!--	<LinearLayout-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:layout_below="@id/layout_email_password"-->
+<!--		android:orientation="horizontal">-->
+
+
+<!--		<Button-->
+<!--			style="?android:attr/button"-->
+<!--			android:id="@+id/button_sign_in"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_weight="1"-->
+<!--			android:text="@string/sign_in"/>-->
+
+
+<!--		<Button-->
+<!--			style="?android:attr/button"-->
+<!--			android:id="@+id/button_sign_up1"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_weight="1"-->
+<!--			android:text="child"/>-->
+<!--		<Button-->
+<!--			style="?android:attr/button"-->
+<!--			android:id="@+id/button_sign_up2"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_weight="1"-->
+<!--			android:text="parent"/>-->
+
+<!--	</LinearLayout>-->
+
+<!--</RelativeLayout>-->

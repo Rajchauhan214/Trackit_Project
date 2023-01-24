@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_background_shape">
+    <stroke android:width="2dp" android:color="#fff" />
+    <padding android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />
+    <corners android:radius="30dp" />
+
+    <shape android:shape="rectangle">
+        <!--make a gradient background-->
+        <gradient
+            android:type="linear"
+            android:startColor="#fff"
+            android:endColor="#fff"
+            android:centerColor="#fff"
+            android:angle="90"
+            android:gradientRadius="10"
+            />
+        <!--apply a border around button-->
+        <stroke android:color="#fff" android:width="2dp" />
+        <!-- make the button corners rounded-->
+        <corners android:radius="20dp"/>
+    </shape>
+</shape>

@@ -1,0 +1,58 @@
+<resources>
+    <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.ActionBar">-->
+    <!--    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">-->
+    <!--        <item name="android:actionBarStyle">@style/MyActionBar</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">-->
+    <!--        <item name="android:background">#009688</item>-->
+    <!--    </style>-->
+
+    <!-- Base application theme. -->
+
+    <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.noactionbar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--    </style>-->
+
+    <!--    <style name="AppTheme.PopupOverlay"></style>-->
+
+    <!--    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light">-->
+    <!--        <item name="colorPrimary">@drawable/gradientsquare</item>-->
+    <!--        <item name="colorPrimaryDark">@drawable/gradientsquare</item>-->
+    <!--        <item name="colorAccent">@drawable/gradientsquare</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="ThemeOverlay.FirebaseIcon"></style>-->
+
+    <!--    <style name="ThemeOverlay.MyTitleText"></style>-->
+
+    <!--    <style name="ThemeOverlay.MyTextDetail"></style>-->
+
+    <!--    <style name="ThemeOverlay.MyDarkButton"></style>-->
+    <!--    <style name="AppTheme.AppBarOverlay">-->
+
+
+    <!--    </style>-->
+
+
+</resources>

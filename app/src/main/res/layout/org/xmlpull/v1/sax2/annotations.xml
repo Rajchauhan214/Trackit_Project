@@ -1,0 +1,5 @@
+<root>
+    <item name='org.xmlpull.v1.sax2.Driver'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

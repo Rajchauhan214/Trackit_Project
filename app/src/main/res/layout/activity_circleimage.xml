@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    tools:ignore="WrongFolder">
+
+    <declare-styleable
+        android:name="circleimage">
+        <attr android:name="civ_border_width"
+            android:format="dimension" />
+        <attr android:name="civ_border_color"
+            android:format="color" />
+        <attr android:name="civ_border_overlay"
+            android:format="boolean" />
+        <attr android:name="civ_circle_background_color"
+            android:format="color" />
+    </declare-styleable>
+</resources>

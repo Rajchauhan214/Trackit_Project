@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/toptip"
+    tools:context="com.example.proj.parent_screen">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/loc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:background="#000"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="320dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/abc3"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/loc"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginLeft="250dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@color/colorPrimary"-->
+        <!--            android:text="map"-->
+        <!--            android:title="MAP" />-->
+
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/floatingActionButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margiTop="500dp"-->
+        <!--            android:clickable="true"-->
+        <!--            app:srcCompat="@drawable/fui_ic_check_circle_black_128dp" />-->
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+<!--            app:popupTheme="@style/AppTheme.PopupOverlay">-->
+        </androidx.appcompat.widget.Toolbar>
+
+        <include layout="@layout/content_main" />
+    </FrameLayout>
+
+
+
+
+
+    <!--        android:layout_above="@id/bottom_navigation"-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:elevation="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:layout_alignParentBottom="true"
+
+
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>
+    <!--    <View-->
+
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="4dp"-->
+    <!--        android:layout_marginBottom="-40dp"-->
+    <!--        android:layout_above="@+id/bottom_navigation"-->
+
+    <!--        android:background="@drawable/shadow" />-->
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay"-->
+
+    <!--        >-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/loc"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_marginLeft="250dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:background="@color/colorPrimary"-->
+    <!--            android:text="map"-->
+    <!--            android:title="MAP" />-->
+
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <!--    <android.support.v4.widget.DrawerLayout-->
+    <!--        xmlns:android="https://schemas.android.com/apk/res/android"-->
+    <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--        xmlns:tools="http://schemas.android.com/tools"-->
+    <!--        android:id="@+id/drawer_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:openDrawer="start">-->
+    <!--    <include-->
+    <!--        layout="@layout/app_bar_main"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+    <!--    <android.support.design.widget.NavigationView-->
+    <!--        android:id="@+id/nav_view"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="start"-->
+    <!--        app:headerLayout="@layout/nav_header_main"-->
+    <!--        app:menu="@menu/activity_main_drawer" />-->
+    <!--    </android.support.v4.widget.DrawerLayout>-->
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".screen">-->
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bottom_navigation"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        app:menu="@menu/bottom_nav"-->
+    <!--        app:itemBackground="@color/colorPrimary"-->
+    <!--        app:itemIconTint="@android:color/white"-->
+    <!--        app:itemTextColor="@android:color/white"/>-->
+    <!--</RelativeLayout>-->
+

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.proj.trackit_childregister">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/backlog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:tint="#191919" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#191919"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:optRoundCardCornerRadius="50dp"
+        app:optRoundCardElevation="0dp"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardLeftTopCorner="true"
+        app:optRoundCardRightBottomCorner="false"
+        app:optRoundCardRightTopCorner="true"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create\naccount child"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="#191919"
+                    android:layout_marginStart="30dp"/>
+
+                <EditText
+                    android:id="@+id/c_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Name"
+                    android:drawableEnd="@drawable/user_icon"
+                    android:drawableTint="#696969"
+                    android:padding="15dp"
+                    android:textColor="#191919"
+                    android:textColorHint="#696969"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#696969" />
+                <EditText
+                    android:id="@+id/field_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="E-mail"
+                    android:drawableEnd="@drawable/email_icon"
+                    android:drawableTint="#696969"
+                    android:padding="15dp"
+                    android:textColor="#191919"
+                    android:textColorHint="#696969"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#696969" />
+
+                <EditText
+                    android:id="@+id/field_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Password"
+                    android:drawableEnd="@drawable/pasword_icon"
+                    android:drawableTint="#696969"
+                    android:padding="15dp"
+                    android:textColor="#191919"
+                    android:textColorHint="#696969"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#696969" />
+
+                <Button
+                    android:id="@+id/button_registerchild"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@drawable/gradient"
+                    android:text="Sign in"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:paddingBottom="@dimen/activity_vertical_margin"-->
+<!--    android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--    android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--    android:paddingTop="@dimen/activity_vertical_margin"-->
+<!--    android:background="@color/deeppurple"-->
+<!--    tools:context="com.example.proj.childlogin">-->
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/layout_email_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/field_email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="@string/hint_email"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:maxLines="1"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/field_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/field_email"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="@string/hint_password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:maxLines="1"/>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/layout_email_password"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--        <Button-->
+<!--            style="?android:attr/button"-->
+<!--            android:id="@+id/button_sign_up"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/sign_up"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->

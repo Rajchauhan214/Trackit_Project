@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.proj.trackit_selectuser"
+    android:orientation="vertical"
+    android:background="@drawable/gradientsquare"
+    >
+<RelativeLayout
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="center"
+    >
+    <ImageView
+        android:paddingTop="20dp"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selectuser"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3150dp"
+        android:background="@drawable/round"
+        android:layout_below="@id/relative1"
+        android:gravity="center"
+        >
+
+    <RelativeLayout
+        android:id="@+id/selecttrack"
+        android:layout_centerInParent="true"
+        android:layout_height="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="331dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="@drawable/gradient"
+            android:orientation="vertical"
+            android:id="@+id/childrelate">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/child_face_icon"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="I'm a child user " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parentrelate"
+            android:layout_width="331dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:background="@drawable/gradient"
+            android:layout_below="@+id/childrelate"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/parent_face_icon"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:paddingTop="10dp"
+                android:text="I'm a parent user" />
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

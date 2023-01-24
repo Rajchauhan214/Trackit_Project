@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    tools:context="trackit_fragment_profile"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.noactionbar"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:layout_gravity="top|center"
+                    android:background="#353758"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/trackitlogo"></ImageView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="100dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Your Child's Safety  "
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop" />
+
+            <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/trackitword"></ImageView>
+
+            <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/purple_message_color"></ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|center"
+        app:maxImageSize="56dp"
+        app:srcCompat="@drawable/purple_swipeup_icon" />
+
+<!--below new action bar-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_signin_background"
+            android:orientation="vertical"
+            android:paddingTop="13dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <LinearLayout
+                    android:id="@+id/profile"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/purple_profile_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Profile"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Edit/View Profile"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logout"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/purple_exit_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Logout"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="U may leave this app"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/purple_settings_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Settings"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Go to Settings"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/purple_howitworks_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="How it Works?"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="How TrackIT works"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="200dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/purple_rateus_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Rate App"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Rate our app"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/round"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="10dp"
+                        android:src="@drawable/purple_about_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="About Us"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="About your version"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
